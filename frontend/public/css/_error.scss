@@ -1,0 +1,142 @@
+.errors {
+  margin: 150px auto 0;
+  &__title {
+    margin-bottom: 45px;
+    h1 {
+      font-size: 36px;
+      line-height: 77px;
+      color: #572642;
+      font-family: $font-title;
+      margin: 0;
+      padding-left: 10px;
+    }
+    img {
+      width: 391px;
+      max-width: 100%;
+    }
+  }
+  &__body {
+    margin-top: 70px;
+    margin-bottom: 45px;
+    h4 {
+      margin: 0;
+      margin-bottom: 12px;
+      font-size: 20px;
+      line-height: 26px;
+      color: $primary;
+      font-family: $font-title;
+    }
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 25px;
+      color: $primary;
+      font-family: $font-light;
+    }
+  }
+  &__link {
+    margin-top: 30px;
+    ul {
+      li {
+        a {
+          text-decoration: underline;
+          color: $main;
+          font-size: 20px;
+          line-height: 26px;
+          font-family: $font;
+          margin-bottom: 27px;
+          display: table;
+        }
+      }
+    }
+  }
+  &__form {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    label {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: normal;
+      color: $dark;
+      font-family: $font;
+      padding-top: 0 !important;
+      text-align: left !important;
+    }
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      .form-control {
+        width: 100%;
+        height: 33px;
+        box-shadow: none;
+        border-radius: 2px;
+        padding: 0 10px;
+        resize: none;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        color: $dark;
+        font-family: $font;
+        font-size: 14px;
+        &:invalid {
+          border: 1px solid rgba(220, 56, 24, 0.5);
+          background-color: rgba(222, 63, 63, 0.03);
+        }
+      }
+      textarea.form-control {
+        height: 145px;
+        padding: 10px;
+      }
+      .support-send-btn {
+        font-size: 16px;
+        color: $default;
+        font-family: $font;
+        background-color: $main;
+        padding: 0 20px;
+        height: 36px;
+        display: flex;
+        border-radius: 0;
+        &:hover {
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+        }
+      }
+      &.textarea {
+        margin-top: 30px;
+        margin-bottom: 25px;
+      }
+    }
+    .bootstrap-select {
+      width: 100% !important;
+      .caret {
+        border: none;
+        background-image: url('../pic/arrows-menu.png');
+        background-size:11px 7px;
+        width: 11px;
+        height: 7px;
+      }
+      button {
+        &:focus {
+          outline:none !important;
+        }
+      }
+    }
+    .form-cv {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      &__btn {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main;
+        font-family: $font;
+        margin: 0;
+        i {
+          display: flex;
+          font-size: 14px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}

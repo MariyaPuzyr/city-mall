@@ -1,0 +1,18 @@
+@media print {
+
+  img {
+    max-width: 100% !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  ul, img {
+    page-break-inside: avoid;
+  }
+
+  .footer {
+    display: none;
+  }
+}

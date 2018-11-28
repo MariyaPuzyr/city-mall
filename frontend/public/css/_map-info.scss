@@ -1,0 +1,206 @@
+/* map */
+.map-info {
+  &--maps {
+    background: #ebe7de url("../pic/map.svg") no-repeat center bottom;
+    height: 805px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: 660px 751px;
+    .pin-group {
+      position: absolute;
+      right: 40%;
+      bottom: 40%;
+      i {
+        background: url('../pic/pin-bg.png') no-repeat -1px -38px;
+        width: 25px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        color: rgba($default, 0.55);
+        padding-top: 4px;
+      }
+      span {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 10px;
+        height: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $main;
+        color: $default;
+        border-radius: 50%;
+        font-family: $font;
+        padding: 1px 4px 0;
+      }
+      &:hover {
+        cursor: pointer;
+        i {
+          background: url('../pic/pin-bg.png') no-repeat -1px 0;
+        }
+      }
+    }
+  }
+  &__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &--img {
+      flex-basis: 90px;
+      & > img {
+        max-width: 100%;
+        display: block;
+      }
+      &.large {
+        flex-basis: 270px;
+      }
+    }
+  }
+  &--slider {
+    padding: 0 80px 0 105px;
+    height: 805px;
+    .slick-prev, .slick-next {
+      width: auto;
+      height: auto;
+      z-index: 2;
+      &:before {
+        font-size: 0;
+        display: table;
+      }
+    }
+    .slick-prev {
+      left: 40px;
+      &:before {
+        background: url('../pic/arrows.png') no-repeat -1px -11px;
+        width: 15px;
+        height: 29px;
+      }
+    }
+    .slick-next {
+      right: 35px;
+      &:before {
+        background: url('../pic/arrows.png') no-repeat -24px -11px;
+        width: 15px;
+        height: 29px;
+      }
+    }
+    .map-info {
+      &__type {
+        padding-top: 80px;
+        &__top {
+          display: flex;
+        }
+        .map-info__filters {
+          display: flex;
+          transition: .3s ease;
+          color: $secondary;
+          align-items: center;
+          min-height: 35px;
+          width: 29px;
+          overflow: hidden;
+          span {
+            transition: .3s ease;
+            opacity: 0.5;
+            font-size: 19px;
+            margin: 0 5px;
+            display: flex;
+            &:hover {
+              opacity: 1;
+            }
+          }
+          &.hover {
+            width: 105px;
+            transition: .3s ease;
+            span {
+              opacity: 1;
+            }
+          }
+          &:nth-child(2) {
+            .map-info__type--title {
+              white-space: nowrap;
+            }
+          }
+        }
+        &--title {
+          display: none;
+          font-size: 14px;
+          line-height: 16px;
+          font-family: $font-light;
+          transition: .3s ease;
+          width: 80px;
+        }
+        h2 {
+          font-size: 36px;
+          line-height: 46px;
+          color: $main;
+          font-family: $font-title;
+          margin-top: 25px;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          color: $secondary;
+          font-family: $font-light;
+          margin-top: 10px;
+          margin-bottom: 40px;
+        }
+        .mobile-map-info {
+          display: flex;
+        }
+      }
+      &__info {
+        &-about {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          flex-wrap: wrap;
+          .map-info {
+            &__square {
+              font-size: 30px;
+              font-family: $font-title;
+              color: $secondary;
+            }
+            &__look, &__load-presentation {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              line-height: 18px;
+              font-family: $font-light;
+              text-decoration: underline;
+              width: 140px;
+              color: $secondary;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              span {
+                color: $primary;
+                opacity: 0.2;
+                padding-right: 10px;
+                font-size: 26px;
+                display: flex;
+                transition: all 0.3s ease;
+              }
+              &:hover {
+                text-decoration: none;
+                span {
+                  opacity: 0.4;
+                }
+              }
+            }
+            &__load-presentation {
+              span {
+                font-size: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

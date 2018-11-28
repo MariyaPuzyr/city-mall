@@ -1,0 +1,45 @@
+.flex__cell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .flex__25 {
+    width: 100%;
+    margin: 2px;
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+    }
+    &.large-cell {
+      max-width: 290px;
+      width: 50%;
+      height: 184px;
+    }
+    a {
+      transition: .3s ease;
+      &:hover {
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: rgba($secondary, 0.7);
+        }
+      }
+    }
+  }
+  .small-cell {
+    display: flex;
+    width: 190px;
+    flex-wrap: wrap;
+    .flex__25 {
+      display: flex;
+      flex: 1 0 90px;
+      width: 90px;
+      height: 90px;
+    }
+  }
+}

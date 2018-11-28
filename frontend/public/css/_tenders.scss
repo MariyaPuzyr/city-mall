@@ -1,0 +1,47 @@
+.tenders {
+  color: $primary;
+  font-family: $font-title-light;
+
+  h3 {
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 5px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 25px;
+  }
+
+  h2 {
+    font-family: $font-title;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 25px;
+  }
+
+  &__btn-cover {
+    display: flex;
+  }
+
+  &__btn {
+    align-items: center;
+    background-color: $main;
+    color: $default;
+    display: flex;
+    font-family: $font;
+    font-size: 16px;
+    height: 36px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+    padding: 0 20px;
+    transition: all .3s ease;
+
+    &:hover {
+      box-shadow: 0 0 6px 0 rgba($dark, .15);
+      color: $default;
+      text-decoration: none;
+    }
+  }
+}

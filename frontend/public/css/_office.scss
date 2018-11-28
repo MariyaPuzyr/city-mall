@@ -1,0 +1,235 @@
+.company__title {
+
+  .personal-office__descr {
+    color: $primary;
+    font-family: $font;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+  .change-password {
+    color: $main;
+    display: flex;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+}
+
+.money-info {
+  display: flex;
+  justify-content: flex-end;
+
+  &__prepayment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &--title {
+      color: rgba($primary, .3);
+      font-family: $font;
+      font-size: 20px;
+      line-height: 26px;
+      padding-bottom: 10px;
+    }
+
+    &--info {
+      color: $pompadour;
+      font-family: $font-bold;
+      font-size: 36px;
+      line-height: 26px;
+
+      span {
+        font-family: Arial, sans-serif;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.menu-table-info {
+  margin-bottom: 20px;
+
+  .menu-section {
+    background-color: $default;
+    margin-bottom: 20px;
+
+    &__messages {
+      align-items: center;
+      background-color: $main;
+      color: $sulu;
+      display: flex;
+      font-family: $font;
+      font-size: 16px;
+      height: 45px;
+      justify-content: center;
+
+      img {
+        height: 21px;
+        margin-right: 15px;
+        width: 18px;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding-bottom: 40px;
+      padding-top: 25px;
+
+      li {
+
+        a {
+          align-items: center;
+          color: $pompadour;
+          display: flex;
+          font-family: $font-bold;
+          font-size: 18px;
+          line-height: 30px;
+          padding: 0 20px;
+
+          span {
+            align-items: center;
+            display: flex;
+            font-family: $font;
+
+            &::before {
+              background-color: $pompadour;
+              border-radius: 50%;
+              content: '';
+              display: flex;
+              height: 4px;
+              margin-right: 8px;
+              width: 4px;
+            }
+          }
+        }
+
+        &.active a {
+          background-color: rgba($pompadour, .1);
+        }
+      }
+    }
+
+    .estimate-work {
+      align-items: center;
+      background-color: $main;
+      color: $default;
+      display: flex;
+      font-family: $font;
+      font-size: 16px;
+      height: 36px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 0 20px;
+
+
+      &--cover {
+        display: flex;
+      }
+    }
+  }
+
+  .table-section {
+    margin-bottom: 20px;
+
+    .table {
+      margin-bottom: 40px;
+
+      & > thead > tr > th {
+        border-bottom: 2px solid $default;
+        color: $primary;
+        font-family: $font-bold;
+        font-size: 16px;
+        line-height: 33px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        span {
+          font-family: Arial, sans-serif;
+        }
+      }
+      & > tbody > tr {
+
+        & > td {
+          border-bottom: 1px solid $default;
+          color: $primary;
+          font-family: $font;
+          font-size: 14px;
+          line-height: 18px;
+          padding: 25px 10px;
+
+          &:last-child,
+          &:nth-child(4) {
+            text-align: right;
+          }
+
+          &.rent {
+            color: $main;
+            text-decoration: underline;
+          }
+        }
+        &:last-child {
+
+          & > td {
+            border-bottom: 0;
+          }
+        }
+
+      }
+    }
+
+    .total {
+      align-items: flex-end;
+      border-bottom: 1px solid rgba($cloudy, .4);
+      border-top: 1px solid rgba($cloudy, .4);
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      &__payment {
+        color: $pompadour;
+        font-family: $font;
+        font-size: 16px;
+        line-height: 18px;
+        padding-top: 29px;
+
+        .result {
+          font-family: $font-bold;
+        }
+
+        span {
+          font-family: Arial, sans-serif;
+          font-size: 20px;
+        }
+      }
+
+      .including-debt {
+        @extend .total__payment;
+        padding-bottom: 25px;
+        padding-top: 10px;
+      }
+    }
+    .table-feedback {
+
+      p {
+        color: $primary;
+        font-family: $font;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+
+      .errors__form {
+        margin-top: 25px;
+      }
+    }
+  }
+}

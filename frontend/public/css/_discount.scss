@@ -1,0 +1,135 @@
+/* discounts */
+.discounts {
+  background-color: #ebebeb;
+  &-for {
+    background-color: $main;
+    &__bg {
+      position: relative;
+      width: 100%;
+      height: 530px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &-nav {
+    margin-top: -20px;
+    .slick-list {
+      width: 80%;
+      max-width: 850px;
+      margin: auto;
+      padding: 0 !important;
+      .slick-track {
+        transform: translate3d(0, 0px, 0px);
+      }
+    }
+    .slick-slide {
+      padding-left: 35px;
+      padding-right: 30px;
+      display: flex !important;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 260px;
+      transition: all 0.3s ease;
+      opacity: 0.5;
+      &.slick-current {
+        background-color: $default;
+        opacity: 1;
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 40px;
+        font-family: $font-title-bold;
+      }
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $font-title;
+      }
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+    .slick-prev, .slick-next {
+      top: calc(50% + 20px);
+      width: auto;
+      height: auto;
+      &:before {
+        font-size: 0;
+        display: table;
+      }
+    }
+    .slick-prev {
+      left: 80px;
+      &:before {
+        background: url('../pic/arrows.png') no-repeat -47px -1px;
+        width: 18px;
+        height: 38px;
+      }
+      &:hover {
+        &:before {
+          background: url('../pic/arrows.png') no-repeat -77px -1px;
+          width: 18px;
+          height: 38px;
+        }
+      }
+    }
+    .slick-next {
+      right: 80px;
+      &:before {
+        background: url('../pic/arrows.png') no-repeat -106px -1px;
+        width: 18px;
+        height: 38px;
+      }
+      &:hover {
+        &:before {
+          background: url('../pic/arrows.png') no-repeat -136px -1px;
+          width: 18px;
+          height: 38px;
+        }
+      }
+    }
+  }
+  &__info {
+    padding: 0 80px 50px;
+    h4 {
+      font-size: 16px;
+      line-height: 15px;
+      text-transform: uppercase;
+      font-family: $font;
+      color: #d0ffab;
+      margin-top: 70px;
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 46px;
+      font-family: $font-title;
+      color: $default;
+      margin-top: 45px;
+      max-width: 295px;
+      margin-bottom: 0;
+    }
+    h5 {
+      font-size: 20px;
+      margin-top: 0;
+      color: $default;
+      font-family: $font-light;
+      margin-bottom: 55px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      color: $secondary;
+      font-family: $font-light;
+    }
+    .all-propose {
+      font-size: 16px;
+      line-height: 25px;
+      color: $default;
+      font-family: $font;
+      margin-top: 15px;
+      display: flex;
+      text-decoration: underline;
+    }
+  }
+}

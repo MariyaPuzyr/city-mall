@@ -1,0 +1,50 @@
+.open-vacancy {
+
+  h2 {
+    color: $main;
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 35px;
+    margin-top: 30px;
+    text-decoration: underline;
+  }
+
+  .vacancy-info {
+    align-items: center;
+    color: $pompadour;
+    display: flex;
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 5px;
+
+    i {
+      display: flex;
+      font-size: 18px;
+      padding-right: 10px;
+    }
+  }
+
+  p {
+    font-family: $font-light;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+}
+
+.send-cv {
+  h1 {
+    color: $pompadour;
+    font-family: $font-title;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  [type="file"] {
+    display: none;
+  }
+}

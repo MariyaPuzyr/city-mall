@@ -1,0 +1,212 @@
+/* main-banner */
+.main-banner {
+  height: 100vh;
+  &__slider {
+    height: 100vh;
+    visibility: hidden;
+    &.slick-initialized {
+      visibility: visible;
+    }
+    &__bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      height: 100vh;
+    }
+    .slick-slide {
+      position: relative;
+      height: 100vh;
+      .main-banner__info {
+        padding: 0 80px;
+        display: flex;
+        justify-content: center;
+        color: $default;
+        height: 100%;
+        flex-direction: column;
+        h3 {
+          font-size: 20px;
+          line-height: 28px;
+          font-family: $font;
+        }
+      }
+      &.slick-dotted {
+        margin-bottom: 0;
+      }
+      &.slick-active {
+        .main-banner__info {
+
+        }
+      }
+    }
+    &__title {
+      display: flex;
+      font-size: 40px;
+      line-height: 45px;
+      font-family: $font-title;
+      text-transform: uppercase;
+      width: 70%;
+      margin: 0;
+      align-items: center;
+      span {
+        font-size: 110px;
+        padding-right: 10px;
+      }
+    }
+    .slick-dots {
+      bottom: 24px;
+      width: auto;
+      left: 105px;
+      li {
+        button {
+          &:before {
+            font-size: 7px;
+            transition: all 0.3s ease;
+            color: $default;
+            opacity: 1;
+          }
+          &:hover {
+            &:before {
+              font-size: 11px;
+            }
+          }
+
+        }
+        &.slick-active {
+          button {
+            &:before {
+              opacity: 1;
+              color: $main;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .slick-prev, .slick-next {
+      width: auto;
+      height: auto;
+      top: inherit;
+      bottom: 19px;
+      z-index: 1;
+      &:before {
+        font-size: 0;
+        display: table;
+      }
+    }
+    .slick-prev {
+      left: 80px;
+      &:before {
+        background: url('../pic/main-banner-arrows.png') no-repeat 0 -1px;
+        width: 10px;
+        height: 17px;
+      }
+    }
+    .slick-next {
+      right: auto;
+      left: 270px;
+      &:before {
+        background: url('../pic/main-banner-arrows.png') no-repeat -17px -1px;
+        width: 10px;
+        height: 17px;
+      }
+    }
+  }
+  &--show {
+    display: flex;
+    height: 33.33vh;
+    color: $default;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: $font-title;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid $default;
+    border-top: none;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 70px;
+      overflow: hidden;
+      i {
+        font-size: 47px;
+        margin-right: 15px;
+        color: $default;
+        display: none;
+        transition: all .5s;
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        opacity: 0;
+      }
+    }
+    h6 {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 28px;
+      font-family: $font-light;
+      color: $default;
+      margin: 0;
+      display: none;
+      transition: all .5s;
+      -moz-transition: all .5s;
+      -webkit-transition: all .5s;
+      -o-transition: all .5s;
+      opacity: 0;
+
+    }
+    &__fon {
+      position: absolute;
+      z-index: -1;
+      height: auto;
+      transition: all 700ms;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+      align-items: center;
+      padding: 0;
+      &:after {
+        content: '';
+        position: absolute;
+        background-color: rgba($secondary, 0.3);
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+      h1 {
+        color: $main;
+        justify-content: center;
+        i {
+          display: flex;
+          opacity: 1;
+        }
+      }
+      h6 {
+        display: flex;
+        opacity: 1;
+      }
+      .main-banner--show__fon {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+  }
+}

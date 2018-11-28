@@ -1,0 +1,92 @@
+///* seo-text */
+.seo-text {
+  border-bottom: 1px solid $prim;
+  margin: 45px 72px 0 71px;
+
+  h2 {
+    color: $main;
+    font-family: $font-title;
+    font-size: 36px;
+    line-height: 46px;
+    margin: 0;
+    padding: 0 80px 40px 0;
+  }
+
+  &__description {
+    position: relative;
+
+    &-cover {
+      max-height: 110px;
+      overflow: hidden;
+    }
+
+    p {
+      color: $primary;
+      font-family: $font;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &.show-all {
+
+      p {
+        height: auto;
+      }
+
+      .seo-text__all-text {
+
+        &::after {
+          background: url('../pic/small-arrow.png') no-repeat center 0;
+          transform: rotate(180deg);
+        }
+
+        &:hover {
+
+          &::after {
+            background: url('../pic/small-arrow.png') no-repeat center -9px;
+          }
+        }
+      }
+    }
+  }
+
+  &__shadow {
+    background: linear-gradient(to bottom, rgba($default, 0) 0%, rgba($default, 1) 100%);
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__all-text {
+    border-bottom: 1px dotted rgba($secondary, .5);
+    color: $secondary !important;
+    cursor: pointer;
+    display: table;
+    float: none !important;
+    font: $font 16px / 16px normal !important;
+    margin: 45px 0 40px 140px;
+    position: relative;
+    transition: all .3s ease;
+    z-index: 2;
+
+    &::after {
+      background: url('../pic/small-arrow.png') no-repeat center 0;
+      content: '';
+      display: flex;
+      height: 5px;
+      margin-top: 8px;
+      position: absolute;
+      transition: all .3s ease;
+      width: 100%;
+    }
+
+    &:hover {
+      border-bottom: 1px dotted transparent;
+
+      &::after {
+        background: url('../pic/small-arrow.png') no-repeat center -9px;
+      }
+    }
+  }
+}

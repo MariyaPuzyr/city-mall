@@ -1,0 +1,113 @@
+.company-services {
+
+  &__title {
+    align-items: center;
+    color: $pompadour;
+    display: flex;
+    font-family: $font-title;
+    font-size: 24px;
+    line-height: 31px;
+
+    i {
+      color: $main;
+      display: flex;
+      font-size: 53px;
+      padding-right: 20px;
+    }
+  }
+
+  &__description {
+    color: $primary;
+    font-family: $font-light;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .panel-group {
+    margin-bottom: 90px;
+
+    .panel {
+      background-color: $default;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      margin-bottom: 15px;
+      transition: all .3s ease;
+
+      &:hover {
+        box-shadow: 0 0 3px 0 rgba($dark, .11);
+        cursor: pointer;
+
+        .panel-heading .panel-title div {
+          top: 5px;
+        }
+      }
+
+      .panel-heading {
+        background-color: $default;
+        padding: 0;
+
+        .panel-title {
+          align-items: center;
+          color: $pompadour;
+          display: flex;
+          font-family: $font-bold;
+          font-size: 20px;
+          justify-content: space-between;
+          line-height: 31px;
+          padding: 20px 30px;
+
+          a {
+            text-decoration: none;
+          }
+
+          div {
+            position: relative;
+            top: 0;
+            transition: all .3s ease;
+            width: 15px;
+          }
+
+          .show-description {
+            background: url('../pic/faq-icons.png') no-repeat 0 -23px;
+            height: 9px;
+          }
+        }
+      }
+
+      &.opened {
+        box-shadow: 0 0 3px 0 rgba($dark, .11);
+
+        .panel-heading {
+
+          .panel-title {
+
+            .show-description {
+              background: url('../pic/faq-icons.png') no-repeat 0 0;
+              height: 15px;
+              top: 0;
+            }
+          }
+        }
+      }
+
+      .panel-body {
+        border-top: none !important;
+        padding: 0 0 20px;
+
+        ul {
+
+          li {
+            color: $primary;
+            font-family: $font-light;
+            font-size: 16px;
+            line-height: 40px;
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
+}

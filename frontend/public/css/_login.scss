@@ -1,0 +1,66 @@
+.form-authorization {
+  background-color: $default;
+  padding:40px 50px 30px;
+  margin-top: 60px;
+  margin-bottom: 135px;
+  &__title {
+    font-size: 36px;
+    line-height: 46px;
+    color: #572642;
+    font-family: $font-title;
+  }
+  &__descr {
+    font-size: 20px;
+    color: #572642;
+    line-height: 24px;
+    font-family: $font;
+    margin-bottom: 35px;
+  }
+  .form-group {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    .control-label {
+      font-weight: normal;
+      text-align: left;
+      font-size: 16px;
+      color: $dark;
+      font-family: $font;
+      padding: 0;
+    }
+    .form-control {
+      height: 33px;
+      border: 1px solid rgba(128, 128, 128, 0.5);
+      border-radius: 2px;
+      box-shadow: none;
+    }
+    p {
+      margin: 5px 0 0 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: #a6a6a6;
+      font-family: $font-light;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    .btn {
+      background-color: $main;
+      color: $default;
+      height: 36px;
+      padding:0 20px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-family: $font;
+      border-radius: 0;
+    }
+    .remember-pass {
+      color: $main;
+      font-size: 14px;
+      font-family: $font;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/.idea/
+/node_modules/
+/public/test/*
+/public/css/*
+/public/js/*
+/public/fonts/*
+/public/pic/*
+/public/libs/*
+/frontend/public/libs/*
+/frontend/public/css/*.css*

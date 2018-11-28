@@ -1,0 +1,56 @@
+/*  */
+.modal-dialog.price-popup {
+  width: 467px;
+  .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+  .modal-header {
+    border: none;
+    padding: 30px 25px 25px 45px;
+  }
+  .modal-title {
+    font-size: 36px;
+    line-height: 38px;
+    color: #572642;
+    font-family: $font-title;
+  }
+  .close {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    path {
+      fill: #572642
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .modal-body {
+    padding: 0 40px 40px 45px;
+  }
+  .price-popup__description {
+    font-size: 18px;
+    line-height: 28px;
+    color: $primary;
+    font-family: $font;
+    margin-bottom: 35px;
+  }
+  label {
+    font-size: 16px;
+    line-height: 42px;
+    font-family: $font;
+    color: $dark;
+    margin: 0;
+    font-weight: normal;
+  }
+  .form-control {
+    border-radius: 2px;
+    border: 1px solid rgba(#808080, .5);
+    opacity: .4;
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

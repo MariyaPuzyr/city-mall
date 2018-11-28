@@ -1,0 +1,116 @@
+// scroll to top
+a.to-top(href="#0")
+    | Наверх
+    svg(version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve")
+        path(d="M2,12.9l6.1-6l6.1,6l1.9-1.9L8,3.1L0.1,11L2,12.9z")
+// footer
+footer.footer
+    .row.hidden-sm.hidden-xs
+        .col-lg-6.col-sm-6.col-md-6.col-xs-12
+            .row
+                .col-ld-4.col-sm-4.col-md-4.col-xs-12
+                    ul
+                        li
+                            a.selected(href="#") О компании
+                        li
+                            a(href="#") Услуги компании
+                        li
+                            a(href="#") Команда
+                        li
+                            a(href="#") Тендеры
+                        li
+                            a(href="#") Новости
+                        li
+                            a(href="#") Вакансии
+                .col-ld-4.col-sm-4.col-md-4.col-xs-12
+                    ul
+                        li
+                            a.selected(href="#") Объекты
+                        li
+                            a(href="#") Офисы
+                        li
+                            a(href="#") Торговая площадь
+                        li
+                            a(href="#") Street retail
+                .col-ld-4.col-sm-4.col-md-4.col-xs-12
+                    ul
+                        li
+                            a.selected(href="#") Аренда
+                        li
+                            a.selected(href="#") Спецпредложения
+                        li
+                            a.selected(href="#") Контакты
+                        li
+                            a.selected.personal-office(href="#") Личный кабинет
+        .col-lg-6.col-sm-6.col-md-6.col-xs-12
+            .row
+                .col-lg-8.col-md-8.col-sm-8.col-xs-12
+                    .contact-form
+                        ul#myTabs.nav.nav-tabs.contact-form__link(role="tablist")
+                            li.active(role="presentation")
+                                a#home-tab(href="#home" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true")
+                                    i.icon-mail
+                                    span Написать нам
+                            li(role="presentation")
+                                a#profile-tab(href="#profile" role="tab" data-toggle="tab" aria-controls="profile")
+                                    i.icon-phone
+                                    span Заказать звонок
+                        #myTabContent.tab-content
+                            #home.tab-pane.fade.in.active(role="tabpanel" aria-labelledby="home-tab")
+                                form.form(action="#")
+                                    .form-inline
+                                        label.col-md-4(for="name") Имя
+                                        .contact__cooperation__field
+                                            input#name.mf-name(type="text" required="")
+                                            span
+                                    .form-inline.error
+                                        label.col-md-4(for="mail") Почта
+                                        .contact__cooperation__field
+                                            input#mail.mf-email(type="email" required="")
+                                            span
+                                            span.has-error
+                                    .form-inline
+                                        label.col-md-4(for="message") Сообщение
+                                        .contact__cooperation__field
+                                            textarea#message.mf-text(required="")
+                                            span
+                                    button.btn.contact-form--btn(type="submit") Отправить
+                            #profile.tab-pane.fade(role="tabpanel" aria-labelledby="profile-tab")
+                                form(action="#")
+                                    .form-inline.error
+                                        label.col-md-4(for="callback-name") Имя
+                                        .contact__cooperation__field
+                                            input#callback-name.mf-name(type="text" required="")
+                                            span
+                                    .form-inline
+                                        label.col-md-4(for="phone") Телефон
+                                        .contact__cooperation__field
+                                            input#phone.mf-name(type="tel" required="")
+                                            span
+                                    button.btn.contact-form--btn(type="submit") Заказать
+                .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                    .contact-info
+                        .contact-phone +7 (495) 480 86 65
+                        a.add-to-favorites(href="#")
+                            i.icon-star
+                            span Избранное
+                        .cost-renting Запрос на расчет стоимости аренды
+    .row
+        .copyright
+            .hidden-lg.hidden-md.copyright-logo
+                .copyright__info
+                    img.footer-logo(src="pic/logo-active.svg" alt="")
+            .mobile-reverse
+                .copyright__info
+                    img.footer-logo.hidden-xs.hidden-sm(src="pic/logo-active.svg" alt="")
+                    .copyright-text © ООО “СитиЭндМолз” Москва, ул. Ленинская Слобода, д.26
+                .developers.hidden-sm.hidden-xs
+                    a(href="#")
+                        span Разработано idem.agency
+                        img(src="pic/idem-logo.jpg" alt="")
+                .contact-info.hidden-lg.hidden-md
+                    .contact-phone +7 (495) 480 86 65
+                    a.write-to-us(href="#")
+                        i.icon-mail
+                        span Написать нам
+// end footer

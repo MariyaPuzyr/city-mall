@@ -1,0 +1,29 @@
+doctype html
+html(lang=ru)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Document
+        link(rel="stylesheet" href="/css/styles.css")
+        link(rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.css")
+        link(rel="stylesheet" href="/libs/slick-carousel/slick/slick.css")
+        link(rel="stylesheet" href="/libs/slick-carousel/slick/slick-theme.css")
+        block styles
+    body
+        .page
+            include components/common/header
+            .container
+                div.fixed-bg
+                block content
+                //include components/common/footer
+
+            include components/common/footer
+        script(src="/libs/jquery/dist/jquery.js")
+        script(src="/libs/bootstrap/dist/js/bootstrap.js")
+        script(src="/js/jquery.imagemapster.js")
+        script(src="/libs/slick-carousel/slick/slick.js")
+        script(src="/js/common.js")
+
+        block scripts

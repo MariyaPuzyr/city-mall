@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'PFBeauSansPro-Regular';
+  src: url('../fonts/PFBeauSansPro-Reg.eot');
+  src: url('../fonts/PFBeauSansPro-Reg.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Reg.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Reg.woff')format('woff'),
+  url('../fonts/PFBeauSansPro-Reg.svg#PFBeauSansPro-Reg')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-title: 'PFBeauSansPro-Regular';
+
+@font-face {
+  font-family: 'PFBeauSansPro-Light';
+  src: url('../fonts/PFBeauSansPro-Light.eot');
+  src: url('../fonts/PFBeauSansPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Light.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Light.woff')format('woff'),
+  url('../fonts/PFBeauSansPro-Light.svg#PFBeauSansPro-Light')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-title-light: 'PFBeauSansPro-Light';
+
+@font-face {
+  font-family: 'PFBeauSansPro-SemiBold';
+  src: url('../fonts/PFBeauSansPro-SeBold.eot');
+  src: url('../fonts/PFBeauSansPro-SeBold.eot?#iefix') format('embedded-opentype'), url('../fonts/PFBeauSansPro-SeBold.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-SeBold.woff')format('woff'),
+  url('../fonts/PFBeauSansPro-SeBold.svg#PFBeauSansPro-SeBold')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-title-semi-bold: 'PFBeauSansPro-SemiBold';
+
+@font-face {
+  font-family: 'PFBeauSansPro-Bold';
+  src: url('../fonts/PFBeauSansPro-Bold.eot');
+  src: url('../fonts/PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Bold.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Bold.woff')format('woff'),
+  url('../fonts/PFBeauSansPro-Bold.svg#PFBeauSansPro-Bold')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-title-bold: 'PFBeauSansPro-Bold';
+
+@font-face {
+  font-family: 'PFBeauSansPro-Bbook';
+  src: url('../fonts/PFBeauSansPro-Book.eot');
+  src: url('../fonts/PFBeauSansPro-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFBeauSansPro-Book.ttf') format('truetype'),
+  url('../fonts/PFBeauSansPro-Bbook.woff')format('woff'),
+  url('../fonts/PFBeauSansPro-Bbook.svg#PFBeauSansPro-Bbook')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-title-bbold: 'PFBeauSansPro-Bbook';
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.otf') format('opentype'),
+  url('../fonts/ProximaNova-Regular.woff')format('woff'),
+  url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font: 'ProximaNova-Regular';
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Light.otf') format('opentype'),
+  url('../fonts/ProximaNova-Light.woff')format('woff'),
+  url('../fonts/ProximaNova-Light.svg#ProximaNova-Light')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-light: 'ProximaNova-Light';
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Bold.otf') format('opentype'),
+  url('../fonts/PFBeauSansPro-Reg.woff')format('woff'),
+  url('../fonts/PFBeauSansPro-Reg.svg#PFBeauSansPro-Regular')format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+$font-bold: 'ProximaNova-Bold';
+
+$default: #ffffff;
+$main: #7ac143;
+$secondary: #5d2842;
+$primary: #372d31;
+$dark: #000000;
+$pompadour: #572642;
+$prim: #d7d5d6;
+$dimgray: #6B6B6B;
+$finn: #693c56;
+$nero: #232323;
+$snow: #f9f9f9;
+$cloudy: #b2afa8;
+$sulu: #adff6c;
+$crimson: #de1a33;
+$shamrock: #029a55;
+$pacific: #019ee0;
+$grey: #808080;
+$white: #FEFEFE;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow: $top $left $blur $color;
+  -moz-box-shadow: $top $left $blur $color;
+  box-shadow: $top $left $blur $color;
+}
+
+@mixin transition($style, $time, $animation) {
+  -webkit-transition: $style $time $animation;
+  -moz-transition: $style $time $animation;
+  -o-transition: $style $time $animation;
+  transition: $style $time $animation;
+}

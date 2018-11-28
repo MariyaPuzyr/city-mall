@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Company News List</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/animate.css/animate.css">
+</head>
+<body class="full-width">
+<div class="privacy-policy__fon">
+	<div class="container">
+		<div class="fixed-bg"></div>
+		<!-- fixed header -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="header-top">
+						<div class="column-menu">
+							<a href="index.html" class="logo"></a>
+							<div class="menu-nav">
+								<div class="menu-header">
+									<div class="menu-header--title hidden-xs">Меню</div>
+									<button class="btn-nav">
+										<span class="icon-bar top"></span>
+										<span class="icon-bar middle"></span>
+										<span class="icon-bar bottom"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="column hidden-xs">
+							<ul class="nav">
+								<li class="callback__title">Обратный звонок</li>
+								<li class="callback__phone">8 (495) 480 86 65</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-body">
+						<div class="row">
+							<div class="col-md-12 col-xs-12">
+								<ul class="nav">
+									<li class="button-dropdown">
+										<a href="javascript:void(0)" class="dropdown-toggle">Компания <img
+														src="pic/arrows-menu.png" alt=""></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Услуги компании</a></li>
+											<li><a href="#"> Команда</a></li>
+											<li><a href="#"> Тендеры</a></li>
+											<li><a href="#"> Новости</a></li>
+											<li><a href="#"> Вакансии</a></li>
+										</ul>
+									</li>
+									<li class="button-dropdown">
+										<a href="javascript:void(0)" class="dropdown-toggle">Объекты <img
+														src="pic/arrows-menu.png" alt=""></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Офисы</a></li>
+											<li><a href="#"> Торговые площади</a></li>
+											<li><a href="#"> Street retail</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Аренда помещений</a></li>
+									<li><a href="#">Спецпредложения</a></li>
+									<li><a href="#">Контакты </a></li>
+									<li class="personal-office"><a href="#"><i
+													class="icon-man"></i><span>Личный кабинет</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="search-field">
+								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+									<form class="navbar-form" role="search">
+										<div class="input-group add-on">
+											<div class="input-group-btn">
+												<button class="btn" type="submit"><img src="pic/search-ico.png" alt="">
+												</button>
+											</div>
+											<input class="form-control" placeholder="Search" name="srch-term" id="srch-term"
+											       type="text">
+										</div>
+									</form>
+								</div>
+								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+									<div class="menu-buttons">
+										<ul>
+											<li><a href="#" class="add-to-favorites"><i class="icon-star"></i>Избранное</a>
+											</li>
+											<li><a href="#" class="check-price">Узнать цену аренды</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="column hidden-lg hidden-sm hidden-md">
+									<ul class="nav">
+										<li class="callback__title">Обратный звонок</li>
+										<li class="callback__phone">8 (495) 480 86 65</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end fixed header -->
+		<div class="fixed-content">
+			<div class="company--top">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<!-- news content -->
+						<div class="news-list">
+							<h1>Новости и события</h1>
+						</div>
+						<!-- end news content -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- filter -->
+	<div class="news-list__filter">
+		<div class="container">
+			<div class="fixed-content">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="news-list__filter--cover">
+							<ul>
+								<li class="active"><a href="#">Все</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">События</a></li>
+								<li><a href="#">Пресс-релизы</a></li>
+								<li><a href="#">Статьи</a></li>
+							</ul>
+							<a href="#" class="choose-year"><img src="pic/arrows-menu.png" alt="">2016</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end filter -->
+	<div class="container">
+		<div class="fixed-content">
+			<section class="news-list">
+				<div class="news-list__body wow fadeInUp">
+					<figure>
+						<a href="#"><img src="images/news-1.jpg" alt=""></a>
+					</figure>
+					<article>
+						<div class="news-list__date">22 июня</div>
+						<a href="news.html" class="news-list__title">Деловой квартал «Симоновский» пополнился новым арендатором</a>
+						<div class="news-list__description">Группа компаний TEL заключила с УК City&Malls PFM договор аренды
+							помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м...
+						</div>
+					</article>
+				</div>
+
+				<div class="news-list__body wow fadeInUp" data-wow-delay="0.5s">
+					<figure>
+						<a href="#"><img src="images/news-2.jpg" alt=""></a>
+					</figure>
+					<article>
+						<div class="news-list__date">18 июня</div>
+						<a href="news.html" class="news-list__title">Офисный рынок столицы расширяется</a>
+						<div class="news-list__description">Группа компаний TEL заключила с УК City&Malls PFM договор аренды помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м заключила с УК City&Malls PFM договор аренды
+						</div>
+					</article>
+				</div>
+
+				<div class="news-list__body wow fadeInUp" data-wow-delay="1s">
+					<figure>
+						<a href="#"><img src="images/events-3.jpg" alt=""></a>
+					</figure>
+					<article>
+						<div class="news-list__date">16 июня</div>
+						<a href="news.html" class="news-list__title">Акция «ROOMER за отечественного производителя»</a>
+						<div class="news-list__description">Группа компаний TEL заключила с УК City&Malls PFM договор аренды
+							помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м...
+						</div>
+					</article>
+				</div>
+
+				<div class="news-list__body wow fadeInUp" data-wow-delay="1.5s">
+					<figure>
+						<a href="#"><img src="images/news-3.jpg" alt=""></a>
+					</figure>
+					<article>
+						<div class="news-list__date">1 июня</div>
+						<a href="news.html" class="news-list__title">Деловой квартал «Симоновский»</a>
+						<div class="news-list__description">Группа компаний TEL заключила с УК City&Malls PFM договор аренды
+							помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м...
+						</div>
+					</article>
+				</div>
+
+				<div class="news-list__body wow fadeInUp">
+					<figure>
+						<a href="#"><img src="images/news-4.jpg" alt=""></a>
+					</figure>
+					<article>
+						<div class="news-list__date">23 мая</div>
+						<a href="news.html" class="news-list__title">Праздника красок ХОЛЛИ на территории Симоновского</a>
+						<div class="news-list__description">Группа компаний TEL заключила с УК City&Malls PFM договор аренды
+							помещений в Деловом квартале «Симоновский» общей площадью 890 кв.м...
+						</div>
+					</article>
+				</div>
+
+				<div class="pagination">
+					<ul>
+						<li><a href="#" class="arrow left"><img src="pic/arrows-menu.png" alt=""></a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="active"><a href="#">3</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">10</a></li>
+						<li><a href="#" class="arrow right"><img src="pic/arrows-menu.png" alt=""></a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<!-- scroll to top-->
+<a class="to-top" href="#0">Наверх
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+    <path d="M2,12.9l6.1-6l6.1,6l1.9-1.9L8,3.1L0.1,11L2,12.9z"></path>
+  </svg>
+</a>
+
+<!-- footer -->
+<footer class="footer">
+	<div class="row hidden-sm hidden-xs">
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+			<div class="row">
+				<div class="col-ld-4 col-sm-4 col-md-4 col-xs-12">
+					<ul>
+						<li><a href="#" class="selected">О компании</a></li>
+						<li><a href="#">Услуги компании</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Тендеры</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+				<div class="col-ld-4 col-sm-4 col-md-4 col-xs-12">
+					<ul>
+						<li><a href="#" class="selected">Объекты</a></li>
+						<li><a href="#">Офисы</a></li>
+						<li><a href="#">Торговая площадь</a></li>
+						<li><a href="#">Street retail</a></li>
+					</ul>
+				</div>
+				<div class="col-ld-4 col-sm-4 col-md-4 col-xs-12">
+					<ul>
+						<li><a href="#" class="selected">Аренда</a></li>
+						<li><a href="#" class="selected">Спецпредложения</a></li>
+						<li><a href="#" class="selected">Контакты</a></li>
+						<li><a href="#" class="selected personal-office">Личный кабинет</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+					<div class="contact-form">
+						<ul class="nav nav-tabs contact-form__link" id="myTabs" role="tablist">
+							<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab"
+							                                          data-toggle="tab" aria-controls="home"
+							                                          aria-expanded="true"><i
+											class="icon-mail"></i><span>Написать нам</span></a>
+							</li>
+							<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"
+							                           aria-controls="profile"><i
+											class="icon-phone"></i><span>Заказать звонок</span></a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade in active" role="tabpanel" id="home"
+							     aria-labelledby="home-tab">
+								<form action="#" class="form">
+									<div class="form-inline">
+										<label for="name" class="col-md-4">Имя</label>
+										<div class="contact__cooperation__field">
+											<input class="mf-name" type="text" required="" id="name">
+											<span></span>
+										</div>
+									</div>
+									<div class="form-inline error">
+										<label for="mail" class="col-md-4">Почта</label>
+										<div class="contact__cooperation__field">
+											<input class="mf-email" type="email" required="" id="mail">
+											<span></span>
+											<span class="has-error"></span>
+										</div>
+									</div>
+									<div class="form-inline">
+										<label for="message" class="col-md-4">Сообщение</label>
+										<div class="contact__cooperation__field">
+											<textarea class="mf-text" required="" id="message"></textarea>
+											<span></span>
+										</div>
+									</div>
+									<button type="submit" class="btn contact-form--btn">Отправить</button>
+								</form>
+							</div>
+							<div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab">
+								<form action="#">
+									<div class="form-inline error">
+										<label for="callback-name" class="col-md-4">Имя</label>
+										<div class="contact__cooperation__field">
+											<input class="mf-name" type="text" required="" id="callback-name">
+											<span></span>
+										</div>
+									</div>
+									<div class="form-inline">
+										<label for="phone" class="col-md-4">Телефон</label>
+										<div class="contact__cooperation__field">
+											<input class="mf-name" type="tel" required="" id="phone">
+											<span></span>
+										</div>
+									</div>
+									<button type="submit" class="btn contact-form--btn">Заказать</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="contact-info">
+						<div class="contact-phone">+7 (495) 480 86 65</div>
+						<a href="#" class="add-to-favorites"><i class="icon-star"></i><span>Избранное</span></a>
+						<div class="cost-renting">Запрос на расчет стоимости аренды</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="copyright">
+			<div class="hidden-lg hidden-md copyright-logo">
+				<div class="copyright__info">
+					<img src="pic/logo-active.svg" alt="" class="footer-logo">
+				</div>
+			</div>
+			<div class="mobile-reverse">
+				<div class="copyright__info">
+					<img src="pic/logo-active.svg" alt="" class="footer-logo hidden-xs hidden-sm">
+					<div class="copyright-text">© ООО “СитиЭндМолз” Москва, ул. Ленинская Слобода, д.26</div>
+				</div>
+				<div class="developers hidden-sm hidden-xs">
+					<a href="#"><span>Разработано idem.agency</span> <img src="pic/idem-logo.jpg" alt=""></a>
+				</div>
+				<div class="contact-info hidden-lg hidden-md">
+					<div class="contact-phone">+7 (495) 480 86 65</div>
+					<a href="#" class="write-to-us"><i class="icon-mail"></i><span>Написать нам</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+<script src="libs/jquery/dist/jquery.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/jquery.imagemapster.js"></script>
+<script src="libs/slick-carousel/slick/slick.js"></script>
+<script src="libs/wow/dist/wow.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+	new WOW().init();
+</script>
+</body>
+</html>
