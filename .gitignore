@@ -8,3 +8,4 @@
 /public/libs/*
 /frontend/public/libs/*
 /frontend/public/css/*.css*
+/package-lock.json
