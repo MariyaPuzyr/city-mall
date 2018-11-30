@@ -6,10 +6,9 @@ html(lang=ru)
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         title Document
-        link(rel="stylesheet" href="/css/styles.css")
-        link(rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.css")
-        link(rel="stylesheet" href="/libs/slick-carousel/slick/slick.css")
-        link(rel="stylesheet" href="/libs/slick-carousel/slick/slick-theme.css")
+        link(rel="stylesheet" href="/css/libs.min.css")
+        link(rel="stylesheet" href="/css/styles.min.css")
+
         block styles
     body
         .page
@@ -20,10 +19,7 @@ html(lang=ru)
                 //include components/common/footer
 
             include components/common/footer
-        script(src="/libs/jquery/dist/jquery.js")
-        script(src="/libs/bootstrap/dist/js/bootstrap.js")
-        script(src="/js/jquery.imagemapster.js")
-        script(src="/libs/slick-carousel/slick/slick.js")
+        script(src="/js/libs.min.js")
         script(src="/js/common.js")
 
         block scripts
